@@ -18,7 +18,7 @@ namespace StarWars.Data.EntityFramework
         {
             _logger = logger;
             //Database.EnsureCreated();
-            //Database.Migrate();
+            Database.Migrate();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

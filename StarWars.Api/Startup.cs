@@ -71,6 +71,7 @@ namespace StarWars.Api
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseGraphiQl();
             app.UseStaticFiles();
             app.UseMvc();
 
