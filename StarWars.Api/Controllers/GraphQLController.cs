@@ -39,6 +39,7 @@ namespace StarWars.Api.Controllers
 
             try
             {
+                // Test
                 var result = await _documentExecuter.ExecuteAsync(executionOptions).ConfigureAwait(false);
 
                 if (result.Errors?.Count > 0)
